@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container-main">
+        <section>
+            <header>
+                <h1>READY TO LAUNCH IN...</h1>
+            </header>
+
+            <div id="countdown-container">
+                <div class="countdown-element">
+                    <span>Dia</span>
+                    <p class="text day">00</p>
+                </div>
+
+                <div class="countdown-element">
+                    <span>Hora</span>
+                    <p class="text hour">00</p>
+                </div>
+
+                <div class="countdown-element">
+                    <span>Minutos</span>
+                    <p class="text minutes">00</p>
+                </div>
+
+                <div class="countdown-element">
+                    <span>Segundos</span>
+                    <p class="text seconds">00</p>
+                </div>
+            </div>
+            
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+            <button id="inscreva-se">Inscreva-se</button>
+        </section>
+
+        <section id="imagem">
+            <figure>
+                <img src="./assets/images/rocket.svg" alt="Rocket">
+            </figure>
+        </section>
+
+        <dialog>
+            <form method="dialog">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="nome" placeholder="Digite o seu nome" required>
+
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Digite o seu email" required>
+
+                <nav>
+                    <button id="cancelar" type="button">Cancelar</button>
+                    <button id="enviar">Enviar</button>
+                </nav>
+            </form>
+        </dialog>
+    </main>
+    <script src="script.js"></script>
+</body>    
+</html>
