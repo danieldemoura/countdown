@@ -22,14 +22,14 @@ function countDown() {
     const totalSeconds = (newYearDate - currentDate) / 1000
 
     const day = Math.floor(totalSeconds / 3600 / 24)
-    const hour = Math.floor(totalSeconds / 3600) % 24
+    const hour = Math.floor(totalSeconds / 3600) % 12
     const minutes = Math.floor(totalSeconds / 60) % 60
     const seconds = Math.floor(totalSeconds) % 60
 
     paragraphDay.innerHTML = `${formatTime(day)} : &nbsp;`
     paragraphHour.innerHTML = `${formatTime(hour)} : &nbsp;`
     paragraphMinutes.innerHTML = `${formatTime(minutes)} : &nbsp;`
-    paragraphSeconds.innerHTML = `${formatTime(seconds)}`
+    paragraphSeconds.innerHTML = `${formatTime(seconds)} &nbsp;`
 }
 
 function formatTime(time) {
